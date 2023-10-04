@@ -15,13 +15,13 @@ class MyBottomNavigationBar extends GetView<MyBottomNavigationBarController> {
       onTap: controller.changeIndex,
       // 선택에 따라 icon·label 색상 변경
       selectedItemColor: context.theme.colorScheme.onBackground,
-      unselectedItemColor: context.theme.colorScheme.onSurfaceVariant,
+      unselectedItemColor: Colors.grey,
       // 선택에 따라 label text style 변경
       unselectedLabelStyle: TextStyle(fontSize: 10),
       selectedLabelStyle: TextStyle(fontSize: 10),
       // 탭 애니메이션 변경 (fixed: 없음)
       type: BottomNavigationBarType.fixed,
-      backgroundColor: context.theme.colorScheme.background,
+      backgroundColor: Colors.black,
       // Bar에 보여질 요소. icon과 label로 구성.
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
